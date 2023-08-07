@@ -1,0 +1,107 @@
+/*
+* Copyright (c) 2017-2018 Daniel Foré (http://danielfore.com)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 2 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+* Boston, MA 02110-1301 USA
+*/
+
+window {
+    transition: all 600ms ease-in-out;
+}
+
+window spinner {
+    margin: 2em;
+}
+
+.weather {
+    padding: 2em;
+    font-weight: 500;
+}
+
+.weather .title-3 {
+    font-size: 1.5em;
+}
+
+.weather .title-1 {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.day {
+    background-color: @BLUEBERRY_500;
+    background-image:
+        linear-gradient(
+            to bottom,
+            alpha(white, 0),
+            alpha(white, 0.3)
+        );
+    color: #fff;
+    text-shadow:
+        0 2px 4px alpha(@BLUEBERRY_700, 0.5),
+        0 1px 0 alpha(@BLUEBERRY_700, 0.7);
+    -gtk-icon-shadow:
+        0 2px 4px alpha(@BLUEBERRY_700, 0.5),
+        0 1px 0 alpha(@BLUEBERRY_700, 0.7);
+}
+
+.night {
+    background-color: #183048;
+    background-image:
+        linear-gradient(
+            to bottom,
+            alpha(white, 0),
+            alpha(white, 0.2)
+        );
+    color: #fff;
+    text-shadow:
+        0 2px 4px alpha(black, 0.2),
+        0 1px 0 alpha(black, 0.4);
+    -gtk-icon-shadow:
+        0 2px 4px alpha(black, 0.2),
+        0 1px 0 alpha(black, 0.4);
+}
+
+.showers {
+    background-color: #68758e;
+    background-image:
+        linear-gradient(
+            to bottom,
+            alpha(white, 0),
+            alpha(white, 0.2)
+        ),
+        url("resource:///io/github/danirabbit/nimbus/rain.svg");
+	background-repeat: no-repeat, repeat;
+    color: #fff;
+    text-shadow:
+        0 2px 4px alpha(black, 0.2),
+        0 1px 0 alpha(black, 0.4);
+    -gtk-icon-shadow:
+        0 2px 4px alpha(black, 0.2),
+        0 1px 0 alpha(black, 0.4);
+    animation: rain 3s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+       background-position:
+           0 0,
+           0 0;
+    }
+    100% {
+       background-position:
+           0 0,
+           400px 512px;
+    }
+}

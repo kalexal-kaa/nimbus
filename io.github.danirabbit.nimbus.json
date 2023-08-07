@@ -1,0 +1,69 @@
+{
+  "id" : "io.github.danirabbit.nimbus",
+  "runtime" : "org.gnome.Platform",
+  "runtime-version" : "44",
+  "sdk" : "org.gnome.Sdk",
+  "command" : "io.github.danirabbit.nimbus",
+  "finish-args" : [
+    "--device=dri",
+    "--share=ipc",
+    "--share=network",
+    "--socket=fallback-x11",
+    "--socket=wayland"
+  ],
+  "modules" : [
+    {
+      "name" : "geocode-glib-2.0",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Denable-gtk-doc=false",
+        "-Denable-installed-tests=false",
+        "-Dsoup2=false"
+      ],
+      "sources" : [
+        {
+          "url" : "https://download.gnome.org/sources/geocode-glib/3.26/geocode-glib-3.26.4.tar.xz",
+          "sha256" : "2d9a6826d158470449a173871221596da0f83ebdcff98b90c7049089056a37aa",
+          "type" : "archive",
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "geocode-glib"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "gweather",
+      "buildsystem" : "meson",
+      "config-opts" : [
+        "-Dgtk_doc=false",
+        "-Dtests=false"
+      ],
+      "sources" : [
+        {
+          "url" : "https://download.gnome.org/sources/libgweather/4.2/libgweather-4.2.0.tar.xz",
+          "sha256" : "af8a812da0d8976a000e1d62572c256086a817323fbf35b066dbfdd8d2ca6203",
+          "type" : "archive",
+          "x-checker-data": {
+            "type": "gnome",
+            "name": "libgweather",
+            "versions": {
+                "<": "40.0",
+                ">=": "4.0.0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name" : "nimbus",
+      "buildsystem" : "meson",
+      "sources" : [
+        {
+          "path" : ".",
+          "type" : "dir"
+        }
+      ]
+    }
+  ]
+}

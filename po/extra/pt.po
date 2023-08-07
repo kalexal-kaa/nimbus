@@ -1,0 +1,118 @@
+# Portuguese (Portugal) translations for com.github.danrabbit.nimbus package.
+# Copyright (C) 2017 THE com.github.danrabbit.nimbus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.danrabbit.nimbus package.
+# André Barata <andretiagob@protonmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-09 00:21+0900\n"
+"PO-Revision-Date: 2020-08-31 21:17+0100\n"
+"Last-Translator: André Barata <andretiagob@protonmail.com>\n"
+"Language-Team: none\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: data/nimbus.metainfo.xml.in:10 data/nimbus.desktop.in:3
+msgid "Nimbus"
+msgstr "Nimbus"
+
+#: data/nimbus.metainfo.xml.in:11 data/nimbus.desktop.in:4
+msgid "See outside without going there"
+msgstr "Veja o que está la fora sem se deslocar"
+
+#: data/nimbus.metainfo.xml.in:13
+msgid ""
+"See the current temperature and weather conditions for your location with "
+"this minimal color-changing applet."
+msgstr ""
+"Veja a temperatura atual e as condições meteorológicas para a sua "
+"localização com esta mini aplicação com mudança de cor."
+
+#: data/nimbus.metainfo.xml.in:15
+msgid "Click anywhere to fetch the latest weather"
+msgstr ""
+"Clique em qualquer lado para pesquisar a informação mais recente sobre a "
+"meteorologia"
+
+#: data/nimbus.metainfo.xml.in:16
+msgid "Stays out of your way by always sticking to the desktop"
+msgstr ""
+"Fica fora do seu caminho, mantém-se sempre colado ao seu ambiente de trabalho"
+
+#: data/nimbus.metainfo.xml.in:17
+msgid "Move the window by dragging any part of it"
+msgstr "Mova a janela arrastando o rato em qualquer parte dela"
+
+#: data/nimbus.metainfo.xml.in:18
+msgid "Quit with the handy shortcut Ctrl + Q"
+msgstr "Saía com o atalho conveniente Ctrl + Q"
+
+#: data/nimbus.metainfo.xml.in:19
+msgid "Respects your system settings for temperature units"
+msgstr "Respeita as definições de unidades de temperatura do seu sistema"
+
+#: data/nimbus.metainfo.xml.in:49
+#, fuzzy
+msgid "Danielle Foré"
+msgstr "Daniel Foré"
+
+#: data/nimbus.metainfo.xml.in:55
+msgid "Updated for OS 7!"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:57
+msgid "New animated rain effect 🌧️"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:58
+msgid "Redesigned app icon"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:59
+msgid "Added Portuguese translation, thanks to @rottenpants466"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:60
+msgid "Updated to the latest platform libraries, thanks to Ryo Nakano"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:61
+msgid "Better error handling and messaging"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:68
+msgid "Odin Updates!"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:70
+msgid "Add Danish and Dutch and update French and Japanese Translations"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:71 data/nimbus.metainfo.xml.in:82
+msgid "Bug fixes and stability improvements"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:78
+msgid "Juno Updates!"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:80
+msgid "Add Catalan, French, German, and Japanese Translations"
+msgstr ""
+
+#: data/nimbus.metainfo.xml.in:81
+msgid "HiDPI icons support"
+msgstr ""
+
+#: data/nimbus.desktop.in:7
+msgid "weather;temperature;"
+msgstr "weather;meteorologia;temperature;temperatura;"
+
+#~ msgid "com.github.danrabbit.nimbus"
+#~ msgstr "com.github.danrabbit.nimbus"
