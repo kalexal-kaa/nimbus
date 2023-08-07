@@ -4,7 +4,7 @@ See the current temperature and weather conditions for your location.
 
 ![Nimbus Screenshot](/data/screenshot.png)
 
-This is a fork of the original app https://github.com/danirabbit/nimbus.
+This is a fork of the original app: https://github.com/danirabbit/nimbus.
 
 ## Building, Testing, and Installation
 
