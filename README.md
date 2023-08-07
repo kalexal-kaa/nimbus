@@ -2,7 +2,7 @@
 
 See the current temperature and weather conditions for your location.
 
-![Nimbus Screenshot](https://raw.github.com/danrabbit/nimbus/main/data/screenshot.png)
+![Nimbus Screenshot](/data/screenshot.png)
 
 This is a fork of the original app https://github.com/danirabbit/nimbus.
 
