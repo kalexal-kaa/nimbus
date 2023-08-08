@@ -29,3 +29,5 @@ To install, use `ninja install`, then execute with `io.github.danirabbit.nimbus`
 
     ninja install
     io.github.danirabbit.nimbus
+    
+You can also use the GNOME Builder IDE to build and run the application.
