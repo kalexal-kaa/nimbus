@@ -7,7 +7,7 @@ public class MainWindow : Adw.ApplicationWindow {
     private Gtk.Stack stack;
     private Gtk.Spinner spinner;
     private Gtk.Grid grid;
-    private Gtk.Box location_disabled_box;
+    private Adw.StatusPage location_disabled_page;
     private GWeather.Location? location = null;
     private GWeather.Info weather_info;
 
@@ -15,7 +15,7 @@ public class MainWindow : Adw.ApplicationWindow {
         set_title("Nimbus");
 
         weather_info = new GWeather.Info (location) {
-            contact_info = "danielle@elementary.io"
+            contact_info = "alex@dev.io"
         };
 
         var weather_icon = new Gtk.Image.from_icon_name (weather_info.get_icon_name ()) {
@@ -75,16 +75,11 @@ public class MainWindow : Adw.ApplicationWindow {
             spinning = true
         };
 
-        location_disabled_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 10);
-        var icon = new Gtk.Image.from_icon_name ("face-sad");
-        icon.pixel_size = 64;
-        var label_info = new Gtk.Label (_("Unable to Get Location"));
-        label_info.add_css_class ("title-1");
-        var label_description = new Gtk.Label (_("Make sure location access is turned on in settings"));
-        label_description.add_css_class ("title-3");
-        location_disabled_box.append (icon);
-        location_disabled_box.append (label_info);
-        location_disabled_box.append (label_description);
+        location_disabled_page = new Adw.StatusPage () {
+            title = _("Unable to Get Location"),
+            description = _("Make sure location access is turned on in settings"),
+            icon_name = "face-sad"
+        };
 
         stack = new Gtk.Stack () {
             transition_type = Gtk.StackTransitionType.CROSSFADE,
@@ -93,7 +88,7 @@ public class MainWindow : Adw.ApplicationWindow {
         };
         stack.add_child (spinner);
         stack.add_child (grid);
-        stack.add_child (location_disabled_box);
+        stack.add_child (location_disabled_page);
 
         var headerbar = new Adw.HeaderBar();
         headerbar.add_css_class ("flat");
@@ -175,7 +170,7 @@ public class MainWindow : Adw.ApplicationWindow {
 
                 on_location_updated (simple.location.latitude, simple.location.longitude);
             } else {
-                stack.visible_child = location_disabled_box;
+                stack.visible_child = location_disabled_page;
             }
         });
     }
